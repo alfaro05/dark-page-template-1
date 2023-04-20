@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Patua One', cursive;
+}
+.grid-container{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "banner-area"
+    "nav-bar-area"
+    "main-area";
+}
+p{
+    margin: 1%;
+    padding: 0;
+}
+h1{
+    color:white;
+    text-shadow: 0px 0px 8px lime;
+    margin: 1%;
+    padding: 0px;
+}
+.banner{
+    grid-area: banner-area;
+    margin: 0px;
+    padding: 0px;
+}
+.banner p, .banner img{
+    padding: 0px;
+    margin: 0px;
+}
+.main-section{
+    grid-area:main-area;
+}
+hr.top-line{
+    box-shadow: 0px 0px 5px lime;
+}
+
+.nav-bar{
+    background-color: lime;
+    grid-area: nav-bar-area;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: sticky;
+}
+.nav-bar a, .nav-bar #dropdown-anchor{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 5vh 10px 5vh;
+}
+.nav-bar a:hover, .nav-bar #dropdown-anchor:hover{
+    color: white;
+    background-color: black;
+    text-shadow: 0px 0px 5px lime;
+    border-radius: 5px;
+}
+#dropdown-anchor{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+.dropdown-content{
+    background-color: lime;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+}
+#dropdown-anchor:hover .dropdown-content{
+    display: block;
+    display:flex;
+    flex-direction: column;
+}
+.dropdown-anchor p{
+    vertical-align: center;
+}
+.footer{
+    background-color: #5CA59C;
+    height: 20vh;
+}
